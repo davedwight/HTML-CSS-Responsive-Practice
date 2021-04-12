@@ -224,3 +224,85 @@ nav {
 #contact a {
     color: #FBFFFB;
 }
+
+/* Responsive styles */
+/* Break points */
+
+/* 
+max-width scales down, this is for desktop first design
+min-width scales up, this is for mobile first design
+*/
+
+/* tablet */
+@media(max-width:800px) {
+    #about div {
+        width: 40%;
+    }
+
+    .shopText {
+        width: 70%;
+    }
+}
+
+/* phone */
+@media(max-width:500px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logo {
+        width: 25%;
+    }
+
+    .links {
+        width: 100%;
+    }
+
+    #home button {
+        display: none;
+    }
+
+    #about {
+        background-image: none;
+        background-color: aliceblue;
+        justify-content: center;
+    }
+
+    #about div {
+        margin-right: 0;
+        width: 80%;
+    }
+
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .bg-img .shopText {
+        width: 90%;
+    }
+
+    .mobileSpecific {
+        flex-direction: column-reverse;
+    }
+
+    .shopText div {
+        width: 100%;
+    }
+
+    .left, .right {
+        width: 100%;
+    }
+
+    #contact p.copyright {
+        text-align: center;
+        margin: 0;
+    }
+
+    .left div {
+        width: 50%;
+    }
+
+
+}
